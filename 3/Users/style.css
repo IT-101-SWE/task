@@ -1,0 +1,244 @@
+
+/*!*set margin and padding to zero to all element*!*/
+/***/
+/*{*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*}*/
+
+/*!*make the three main containers display in one line (block)*!*/
+
+/*.c1, .c2, .c3*/
+/*{*/
+/*    display: block;*/
+/*}*/
+
+/*!*my style*!*/
+
+/*.c1 {*/
+/*    width: 100vw;*/
+/*    height: 10vh;*/
+/*}*/
+
+/*.c2 {*/
+/*    width: 100vw;*/
+/*    height: 85vh;*/
+/*    background: repeating-linear-gradient(145deg, rgb(0, 0, 0),#00000000 40px),repeating-linear-gradient(-145deg, rgba(255, 0, 0, 0.88), #00000040 40px),repeating-linear-gradient(90deg, #000000, transparent 40px);*/
+/*}*/
+
+
+/*.c3 {*/
+/*    width: 100vw;*/
+/*    height: 5vh;*/
+/*}*/
+/*.c3 , .c1*/
+/*{*/
+/*    background: rgba(10,10,10,0.85);*/
+/*}*/
+
+/*.footer {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    padding: 7px 0px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*nav*/
+/*{*/
+/*    position: relative;*/
+/*    z-index: 0;*/
+/*}*/
+
+
+
+/*.menu {*/
+/*    background-image: repeating-linear-gradient(-45deg,rgba(0,0,250,1) 100px,rgba(0,0,0,0.1) 101px);*/
+/*    width: max-content;*/
+/*    position: fixed;*/
+/*    !* left: 50vw; *!*/
+/*    top: 0vh;*/
+/*    font-size: 20px;*/
+/*    border: 3px solid grey;*/
+/*    border-top-width: 0px;*/
+/*    border-radius: 15px;*/
+/*    color: white;*/
+/*    padding: 10px 30px;*/
+/*    z-index: -1;*/
+/*}*/
+
+/*.menu_warp {*/
+/*    position: fixed;*/
+/*    left: 50vw;*/
+
+/*}*/
+
+
+/*set margin and padding to zero to all element*/
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*make the three main containers display in one line (block)*/
+
+.c1, .c2, .c3
+{
+    display: block;
+    color: white;
+}
+
+/*my edit*/
+
+.menu:hover {
+    transform: translate(0px, -40px);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.menu-items {
+    position: absolute;
+    top: -7vh;
+    left: -139px;
+    background-image: repeating-linear-gradient(rgba(0, 0, 250, 0.72) 90px,rgb(0, 0, 0) 100px);
+    width: max-content;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding-top: 10px;
+    transition: transform 1s cubic-bezier(0.77, -0.04, 0.36, 1.09);
+    z-index: -4;
+}
+
+li {
+    background: black;
+    margin: 10px 15px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+
+/*!*set margin and padding to zero to all element*!*/
+/***/
+/*{*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*}*/
+
+/*!*make the three main containers display in one line (block)*!*/
+
+/*.c1, .c2, .c3*/
+/*{*/
+/*    display: block;*/
+/*}*/
+
+/*my style*/
+
+.c1 {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    z-index: 3;
+    top: 0vh;
+}
+
+.c2 {
+    width: 100vw;
+    height: 85vh;
+    position: absolute;
+    top: 10vh;
+    /* background: repeating-linear-gradient(145deg, rgb(0, 0, 0),#00000000 40px),repeating-linear-gradient(-145deg, rgb(228, 50, 50), #0000006e 40px),repeating-linear-gradient(90deg, #000000, #00000061 40px); */
+    background: linear-gradient( 149deg,#c3c517b5 ,#710000d4);
+}
+
+
+.c3 {
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    bottom: 0vh;
+}
+.c3, .c1,nav
+{
+    background: repeating-linear-gradient( 45deg,rgba(10, 10, 10, 0.51) 10px, #65656563 40px),repeating-linear-gradient( -45deg,rgb(10, 10, 10) 10px, #6c6c6c 40px);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 7px 0px;
+    font-weight: bold;
+}
+
+nav
+{
+    /* position: fixed; */
+    /* z-index: 5; */
+    width: 100vw;
+    /* background: black; */
+    height: inherit;
+}
+
+
+
+.menu {
+    background-image: linear-gradient(10deg,rgb(3, 3, 255),rgb(255, 14, 14));
+    width: max-content;
+    position: absolute;
+    left: -15px;
+    top: 0px;
+    font-size: 20px;
+    border: 3px solid grey;
+    border-top-width: 0px;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 30px;
+    padding-top: 20px;
+    z-index: -4;
+    transition: transform 1s cubic-bezier(0.63, 0.13, 0.22, 0.88);
+}
+
+.menu_warp {
+    position: absolute;
+    left: 50vw;
+    /* top: 0vh; */
+    z-index: -5;
+}
+
+
+
+
+.menu:hover + .menu-items
+{
+    transform: translate(0px,55px);
+    transition: transform 1s cubic-bezier(0.65, 0.06, 0.21, 0.89);
+}
+
+.menu-items:hover
+{
+    transform: translate(0px, 55px);
+}
+
+.menu-items:hover + .menu
+{
+    transform: translate(0px, -40px);
+}
+
+#sun_img {
+    width: 310px;
+    height: 275px;
+    position: absolute;
+    left: -125px;
+    top: -125px;
+    transform: rotate(-28deg);
+}
+
+#eye {
+    position: absolute;
+    z-index: 5;
+}

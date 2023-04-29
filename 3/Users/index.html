@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--page Name-->
+    <title>Users</title>
+    <!--css file-->
+    <link rel="stylesheet" href="style.css">
+    <!--js file  -->
+    <script src="script.js"></script>
+</head>
+
+    <body>
+
+    <!--    navigation container-->
+    <div class="c1">
+        <nav>
+
+<!--            website logo container-->
+            <div class="logo">
+<!--                image of the site-->
+                <img width="50" height="60" src="resources/iti-logo.png">
+            </div>
+<!--            menu and it's item container-->
+            <div class="menu_warp">
+                <!--                menu icon -->
+                <div class="menu">
+                    <p>Menu</p>
+                </div>
+                <!--                list of menu items -->
+                <div class="menu-items">
+                    <ul>
+                        <li><div class="home">HOME</div></li>
+                        <li><div class="jobs">JOBS</div></li>
+                        <li><div class="cv">CV</div></li>
+                        <li><div class="users">USERS</div></li>
+                        <li><div class="about_us">ABOUT US</div></li>
+                    </ul>
+                </div>
+            </div>
+<!--            search container-->
+            <div style="display: none"  class="search_bar">
+<!--                search box -->
+                <input type="search" id="search_input" name="search" placeholder="Search by Name or Job Title">
+<!--                search icon-->
+                <button id="search_icon"><img src="#"></button>
+
+            </div>
+
+<!--            login and logout and signup container-->
+            <div style="display: none"  class="log_btns">
+
+<!--                login button-->
+                <div class="bottons"><button id="login_btn">LogIn</button></div>
+
+<!--                sign up botton-->
+                <div class="bottons"><button id="sign_up_btn">Sign Up</button></div>
+
+<!--                logout botton-->
+                <div class="bottons"><button id="logout_btn">LogOut</button></div>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <!--main content container-->
+    <div class="c2">
+        <svg id="eye">
+            <circle cx="35" cy="25" r="45" fill="white"></circle>
+            <circle id="core" cx="40" cy="30" r="20" fill="black"></circle>
+        </svg>
+
+        <img id="sun_img" src="resources/sun-color-icon.svg">
+            <div style="display: none"  id="list_warp">
+<!--         container to hold user list header-->
+            <div class="list_head">
+            <div id="list_head">Name     job Title   Job appliedin   CV</div>
+        </div>
+<!--         container to hold user list -->
+            <div id="user_list">
+            <div class="user">user1     job Title   Job appliedin   View CV</div>
+            <div class="user">user2     job Title   Job appliedin   View CV</div>
+            <div class="user">user3     job Title   Job appliedin   View CV</div>
+            <div class="user">user4     job Title   Job appliedin   View CV</div>
+            <div class="user">user5     job Title   Job appliedin   View CV</div>
+            <div class="user">user6     job Title   Job appliedin   View CV</div>
+            <div class="user">user7     job Title   Job appliedin   View CV</div>
+            <div class="user">user8     job Title   Job appliedin   View CV</div>
+            <div class="user">user9     job Title   Job appliedin   View CV</div>
+        </div>
+        </div>
+    </div>
+
+    <!--footer container     -->
+    <div class="c3">
+        <div class="footer">
+            <footer>All Rights Are Preserved &copy;</footer>
+        </div>
+    </div>
+
+    </body>
+</html>
