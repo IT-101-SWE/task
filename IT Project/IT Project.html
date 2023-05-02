@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sign up
+        </title>
+        <link rel="stylesheet" href="IT Project.css">
+        <!-- // logo of the website -->
+        <link rel="icon" href="icon.png">
+        
+    </head>
+
+    <body>
+        <script src="IT Project.js"></script>
+        <ul>
+        <li>
+            <!-- // logo of website -->
+            <img src="icon.png" alt="" width="80px">
+        </li>
+        <li>
+            <button id="backBtn" onclick="loginform.php">
+                Back
+            </button>
+        </li>
+        </ul>
+        <h1>
+            Freelancer Registration Form
+        </h1>
+        <form action="registration.php" target="_blank" method="post" autocomplete="on" validate > 
+
+            <label for="error"></label>
+            <br><br>
+            
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+            <br><br>
+
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter Email" required>
+            <br><br>
+
+
+            
+            <label for="password">Password:</label>
+            <input type="password" name="pass" id="password" placeholder="Enter Password" 
+            pattern="(?=.*\d)(?=.*?[#?!@$%^&*-\]\[])(?=.*[A-Z]).{8,}" 
+            title="1.Password should be alphanumeric.
+            2.First letter should be capital.
+            3.Must contain a special character (@,$,&,!,etc)." 
+            required>
+            <br><br>
+
+
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" name="confirm" id="confirm" placeholder="Rewrite password" required>
+            <br><br>
+            
+
+
+            <span>
+                Gender:
+            </span>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male">male</label>
+
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="female">female</label>
+            <br><br>
+
+
+            <label for="level">Choose Level:</label>
+            <select name="level" id="level">
+                <option value="null"></option>
+                <option value="intern">Intern</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
+            </select>
+            <br><br>
+
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree for data sharing.</label>
+            <br><br>
+
+            <!-- // go to login page if they already have an account -->
+            <a href="https://loginform.php" target="_self">Already have an account.</a>
+            <br><br>
+
+            <!-- // check on passwords -->
+            <input type="submit" onclick ="return PassValid()" value="Sign up">
+
+        </form>
+    </body>
+    <footer>
+       &copy; All copyrights reserved.
+    </footer>
+    
+</html>

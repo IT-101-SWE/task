@@ -1,0 +1,108 @@
+input{
+    text-align: center;
+
+}
+
+
+h1{
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    box-shadow: inset;
+    background: rgba(152, 91, 0, .10);
+    color: rgb(255, 228, 195);
+    text-shadow: 3px 3px 3px rgb(63, 43, 1);
+}
+
+
+form{
+    text-align: center;
+    width: 500px;
+    border-radius: 20%;
+    background-color: rgb(255, 228, 195);
+    padding: 15px;
+    box-shadow: 10px 10px 10px rgb(63, 43, 1);
+    margin: auto;
+}
+
+
+body{
+    background-image: url("freelance.jpg");
+    background-attachment: fixed;
+    backdrop-filter: blur(6px);
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+label,span{
+    font-style: italic;
+}
+
+input[type=text], input[type=password], input[type=submit],select {
+    width: 45%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgb(245, 234, 220);
+}
+
+input[type=text]:focus, input[type=password]:focus,select {
+    outline: none;
+  }
+
+input[type=submit]{
+    cursor: pointer;
+}
+
+
+footer{
+    color: rgb(245, 234, 220);
+    height: max-content;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+
+
+a{
+    color: rgb(63, 43, 1);
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(242, 198, 141);
+}
+
+
+select{
+    color:rgb(63, 43, 1) ;
+}
+
+button:hover{
+    background-color: rgb(63, 43, 1);
+}
+
+
+
+button{
+    width: fit-content;
+    background-color: rgb(255, 228, 195);
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+    float: right;
+}
+
+img{
+    float: left;
+}
+
+
+#error{
+    color: red;
+}
