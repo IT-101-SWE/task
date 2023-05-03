@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>CV page</title>
+                <link rel="stylesheet" href="master.css">
+        <body>
+                <nav class="nav1">
+                        <h3>ITI freelance page</h3>
+                        <img src="ITI logo.png" alt="">
+                        <button type="submit">Log out</button>
+                </nav>
+                <div class="c">
+                <nav class="nav2">
+                        <a href="#">Home</a>
+                        <a href="#">Jobs</a>
+                        <a href="#"> CV</a>
+                        <a href="#">About us</a>
+                </nav>
+                </div>
+                <div class="box">
+                        <div class="form-box">
+                        <h1>Add your CV</h1>
+                        <form action="" method="post">
+                        <div class="input-group">
+                        <div class="input-field">
+                        <label>Full Name:</label>
+                        <input type="text" required="username" >
+                        </div>
+                        <div class="input-field">
+                        <label>Phone Number:</label>
+                        <input type="tel" required ="Phone Number">
+                        </div>
+                        <div class="input-field">
+                        <label>skills:</label>
+                        <input type="text" required ="skills" placeholder="separate skills by comma">
+                        </div>
+                        <div class="input-field">
+                                <label for="fo">Work hours type:</label>
+                                <input list="Work-hours" name="Work-hours">
+                                <datalist id="Work-hours">
+                                        <option value="Full time">
+                                        <option value="Part time">
+                                </datalist>
+                        </div>
+                        <div>
+                        <label>Discription:</label>
+                        <textarea class="textarea"></textarea>
+                        </div>
+                        <div class="btn"><button type="submit">save</button></div>
+                </form>
+                </div>
+                </div>
+                <script src="/CV.js"></script>
+                <div class="c3">
+                        <div id="c3">
+                        <footer>All Rights are preserved &copy;</footer>
+                        </div>
+                </div>
+        </body>
+</html>
