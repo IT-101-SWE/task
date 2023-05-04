@@ -1,0 +1,481 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html
+{
+    background: black;
+}
+
+
+body
+{
+    position: relative;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "container1"
+    "container2"
+    "container3"
+    ;
+    /*start page from out side the page*/
+    transform: scale(0.7) translateX(-100vw);
+}
+
+
+
+/*body element style*/
+.container1
+{
+
+    display: grid;
+    grid-template-areas:
+    "logo  search  login"
+    "logo  menu    login"
+    ;
+    height: 10vh;
+    background: black;
+    grid-area: container1;
+}
+
+.container2
+{
+    position: relative;
+    z-index: -5;
+    height: 84vh;
+    background: linear-gradient(10deg,#0A4D68 ,#05BFDB );
+    grid-area: container2;
+}
+
+.container3
+{
+    display: grid;
+    grid-template-areas:
+            " social copy empty"
+            " social copy empty";
+    height: 6vh;
+    background: black;
+    grid-area: container3;
+}
+
+/*container1 element style*/
+.logo
+{
+    grid-area: logo;
+}
+
+/*style image of logo*/
+
+.logo img
+{
+    width: 2vw;
+    padding: 10px;
+    background-color: transparent;
+}
+@media screen and (max-width: 800px){
+    .logo img
+    {
+        width: 3vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo img
+    {
+        width: 6vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo img
+    {
+        width: 7vw;
+    }
+}
+
+.menu_warp
+{
+    overflow: hidden;
+    display: inline-grid;
+    position: relative;
+    z-index: -1;
+    top: -15px;
+    justify-items: center;
+    height: 5vh;
+    grid-area: menu;
+}
+
+/*menu and menu item style element*/
+.menu
+{
+    position: absolute;
+    width: max-content;
+    background: linear-gradient(45deg, #ff5e00, #f7bc74);
+    display: inline-grid;
+    color: #101010;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: -1;
+    top: 1vh;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    box-shadow: inset 0px 0px 12px 4px black;
+    transition: transform 1s ease-in-out;
+}
+.menu:hover
+{
+    box-shadow: inset 0px 0px 12px 4px #00000082;
+    transform: scale(1.2) translateY(-5vh);
+    transition: transform 1s ease-in-out;
+
+}
+
+/*control when the menuList go out*/
+.menu:hover + .menuList
+{
+    transition: transform 1s ease-in-out;
+    transform: translateY(10vh);
+}
+
+.menuList
+{
+    top: -10vh;
+    padding: 10px;
+    padding-top: 25px;
+    position: relative;
+    width: max-content;
+    background: linear-gradient(45deg, #ff5e00, #f7bc74);
+    border: 1px solid white;
+    border-radius: 30px;
+    display: inline-grid;
+    z-index: 0;
+    box-shadow: inset 1px 4px 20px 4px black;
+    transition: transform 1s ease-in-out;
+}
+
+
+/*cotrol the height of menuList according to the height of screen*/
+
+@media screen and  (max-height: 630px){
+    .menu
+    {
+        top: 0.8vh;
+    }
+    .menuList
+    {
+        top: -20vh;
+    }
+}
+@media screen and  (max-height: 500px){
+    .menu
+    {
+        top: -0.7vh;
+    }
+    .menuList
+    {
+        top: -40vh;
+    }
+}
+@media screen and  (max-height: 450px){
+    .menu
+    {
+        top: -2vh;
+    }
+    .menuList
+    {
+        top: -40vh;
+    }
+}
+
+/* control width of menuList according to screen width*/
+
+@media screen and (max-width: 430px) {
+    .menu
+    {
+        left: 120px;
+    }
+    .menuList
+    {
+        left: -25px;
+        transform: translateY(-25vh);
+        width: min-content;
+    }
+}
+@media screen and (max-width: 390px) {
+    .menu
+    {
+        left: 100px;
+    }
+    .menuList
+    {
+        left: -25px;
+        transform: translateY(-25vh);
+        width: min-content;
+    }
+}
+@media screen and (max-width: 330px){
+    .menu
+    {
+        left: 80px;
+    }
+    .menuList {
+        left: -17px;
+        transform: translateY(-25vh);
+        width: min-content;
+    }
+}
+
+/* to avoid menu from going back*/
+.menuList:hover
+{
+    transition: transform 1s ease-in-out;
+    transform: translateY(10vh);
+}
+
+/*avoid menu from go back until menuList is not hovered*/
+.menuList:hover ~ .menu
+{
+    box-shadow: inset 0px 0px 12px 4px #00000082;
+    transform: scale(1.2) translateY(-5vh);
+    transition: transform 1s ease-in-out;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+li
+{
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 900;
+    transform: scale(0.8);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    transition: box-shadow .5s ease-in-out , transform .2s ease-in-out;
+}
+li:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0px black;
+    border: 1px outset transparent;
+    transition: box-shadow .5s ease-in-out , transform .2s ease-in-out;
+    border-radius: 30px;
+}
+/* to remove hyber link style*/
+a
+{
+    color: #101010;
+    text-decoration: none;
+}
+
+.search_warp
+{
+    height: 7vh;
+    grid-area: search;
+    display: inline-grid;
+    justify-items: center;
+}
+
+.searchIcon
+{
+    transform: scale(0);
+    opacity: 0;
+    display: flex;
+    top: 1.5vh;
+    left: 55.5vw;
+    z-index: 5;
+    justify-items: center;
+    background: linear-gradient(45deg, #e85500, #d0b89d);;
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+.searchIcon:hover
+{
+    z-index: 0;
+}
+.searchIcon:active ~  #searchForm
+{
+    display: block;
+    transform: none;
+    transition: transform 1s ease-in-out;
+}
+.searchIcon img
+{
+    mix-blend-mode: darken;
+    object-fit: contain;
+    width: 2vw;
+    height: 4vh;
+    padding: 10px;
+}
+
+#searchForm
+{
+    opacity: 0;
+    transform: translateX(6.5vw);
+    padding: 20px;
+    position: relative;
+    left: -30px;
+}
+
+#search_bar
+{
+    position: absolute;
+    width: 15vw;
+    height: 4.5vh;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: center;
+}
+
+#searchForm:focus:active
+{
+    width: 15vw;
+    height: 4.5vh;
+}
+
+#search_btn
+{
+    width: 5vw;
+    height: 4.5vh;
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: linear-gradient(45deg, #ff7220, #ffedd8);
+}
+
+.login_warp
+{
+    grid-area: login;
+}
+
+/*container3 elements style*/
+
+.social
+{
+    margin: auto;
+    position: relative;
+    left: -8vw;
+    bottom: 0vh;
+    width: 5vw;
+    grid-area: social ;
+    display: grid;
+    grid-template-areas: "face link";
+    justify-items: center;
+}
+
+footer
+{
+    padding-top: 5px;
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -5vw;
+    grid-area: copy;
+}
+
+/*control font size */
+@media screen and (min-height: 600px) {
+    footer
+    {
+        font-size: 1vw;
+    }
+
+}
+/*small phone font*/
+@media  screen and (max-width: 400px){
+    footer
+    {
+        font-size: 3vw;
+    }
+}
+/*tablet font*/
+@media  screen and (max-width: 800px){
+    footer
+    {
+        font-size: 3vw;
+    }
+}
+/*medium phone font*/
+@media  screen and (max-width: 500px){
+    footer
+    {
+        font-size: 4vw;
+    }
+}
+
+/*social container element style*/
+.social img
+{
+    width: 2vw;
+    background-color: transparent;
+    border: 1px solid #ff000000;
+    border-radius: 30px;
+    transition: transform 0.5s cubic-bezier(0.68, 0.2, 0.49, 0.9);
+
+}
+
+/*control size of image with screen*/
+@media screen and (max-width: 400px) {
+    .social img
+    {
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .social img
+    {
+        width: 4vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .social img
+    {
+        width: 6vw;
+    }
+}
+
+.social img:hover
+{
+    /*animation of hovering*/
+    border: 2px outset white;
+    transform: translate(0px,-30px) scale(2,2) translateX(-5px);
+    transition:transform 0.5s cubic-bezier(0.68, 0.2, 0.49, 0.9);
+
+}
+
+.facebook
+{
+    grid-area: face;
+}
+
+.linkedin
+{
+    grid-area: link;
+}
+
+
