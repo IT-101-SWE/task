@@ -88,6 +88,19 @@ function validInput(flag=0)
         flag = 2;
     }   
     
+    
+    for(let num = 0; num <=9 ; num++)
+    {
+        if ((passwordChar.includes(num)))
+        {
+            break;
+        }
+        if(num == 9)
+        {
+            flag=5;
+        }
+    }
+    
     //check which condition is false
     if(flag != 0)
     {
@@ -104,6 +117,9 @@ function validInput(flag=0)
                 break;
             case 4:
                 err = "password Must include special characrter !";
+                break;
+            case 5:
+                err = "password Must include numbers !";
                 break;
         }
 
