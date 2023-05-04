@@ -1,0 +1,32 @@
+body {
+    margin: center;
+    
+  }
+  h1{
+    color: cornflowerblue;
+    padding-left: 350px;
+  }
+     h2{
+      padding-left: 20px;
+      color: darkgrey;
+     }       
+  div{
+      padding-left:50px;
+      padding-top:50px;
+      padding-bottom:50px;
+      padding-right:50px;
+      height: 150px;
+      width: 150px;
+      background-color: aqua;
+  
+      border-width: 5px;
+      border-color: azure;
+      border-style: solid;
+  }
+  button{
+    background:blue;
+    padding:5px 5px 5px 5px
+  }
+  button[type="submit"]{
+  color:white;
+  }
