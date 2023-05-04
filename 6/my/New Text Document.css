@@ -1,0 +1,90 @@
+.a,
+.b,
+.w {
+  background-color: black;
+  color: white;
+  margin-bottom:-22PX;
+}
+.b{
+  position: relative;
+  position: sticky;
+  top: 0px;
+  margin-bottom: 5px;
+  z-index: 5;
+}
+.w {
+  HEIGHT: 205px;
+}
+.c{
+
+}
+body{
+  min-height: 5000px;
+}
+.b div{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: black;
+
+  padding-right: 16px;
+}
+.cc{
+display: flex;
+justify-content: flex-end;
+
+}
+.o{
+  background-color: #EEE;
+  width:60%;
+  min-height: 5000px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+hr{
+
+
+}
+.m{
+  padding-left: 33px;
+padding-bottom: 14px;
+margin-left: 20%;
+}
+.cx{
+  background-color: black;
+    width: 10%;
+    color: white;
+    height: 598px;
+    position: sticky;
+    top: 58px;
+}
+.cz{
+  width: 50%;
+  background-color: #eee;
+}
+.cb{
+    width: 20%;
+    background-color: black;
+    color: white;
+    height: 598px;
+    position: sticky;
+    top: 58px;
+}
+.cv{
+    display: flex;
+    justify-content: space-between;
+    min-height: 5000px;
+    position: relative;
+}
+.mmn{
+  padding-left: 40px;
+  background-color: black;
+  height: 55px;
+}
+hr{
+  color: #eee;
+}
+.mmn:hover{
+  width: 80PX;
+  padding-left: 170PX;
+}

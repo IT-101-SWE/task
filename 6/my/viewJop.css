@@ -1,0 +1,235 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  box-sizing: cover;
+  background-image:url(background.jpg);
+  background-size:cover;
+}
+.page{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 40px auto 40PX;
+  grid-template-areas: "logo logo logo logo logo logo logo logo logo logout "
+                       "contant contant contant contant contant contant contant contant contant contant"
+                       "foot foot foot foot foot foot foot foot foot foot";
+
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+  align-items:center;
+  height: 40px;
+
+}
+li{
+  width: 100px;
+  text-align: center;
+}
+
+li a{
+  color: white;
+  text-decoration: none;
+
+}
+header{
+  grid-area: logo ;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+header span{
+  color: #00dcff;
+}
+.btn{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,0);
+  font-size: 15PX;
+  width: 140px;
+  height: 30px;
+  background-color: #00dcff;
+  border: 1px solid black;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+nav{
+  position: absolute;
+  background-color: black;
+  width: 500px;
+  height: 35px;
+  left: 50%;
+  transform: translate(-50%,0);
+  border: 1px solid black;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: none;
+
+}
+.open{
+  position: absolute;
+  background-color: black;
+  width: 500px;
+  height: 35px;
+  left: 50%;
+  transform: translate(-50%,0);
+  border: 1px solid black;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.logout{
+  grid-area: logout ;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: black;
+  color: white;
+}
+.out{
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid #00dcff;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #00dcff;
+    height: 32px;
+}
+section{
+  grid-area: contant;
+}
+form{
+  position: absolute;
+  width: 380px;
+  height: 485px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+input{
+  outline: none;
+  border-radius: 20px;
+  width: 235px;
+  height: 35px;
+
+}
+#title:focus{
+  border-bottom: 3px solid #00dcff;
+}
+#skill:focus{
+  border-bottom: 3px solid #00dcff;
+}
+#skill2:focus{
+  border-bottom: 3px solid #00dcff;
+}
+
+label{
+  font-size: 20PX;
+  color: white;
+
+}
+.joptitle{
+  position: absolute;
+  top:20px;
+  left: 20px;
+
+}
+#title{
+  position: absolute;
+  top: -4px;
+  left: 120px;
+  padding-left: 15px;
+}
+.skill_required{
+  position: absolute;
+  top:63px;
+  left: 20px;
+}
+#skill{
+  position: absolute;
+  top: -4px;
+  left: 120px;
+  padding-left: 15px;
+}
+#skill2{
+  position: absolute;
+  top: 39px;
+  left: 120px;
+  padding-left: 15px;
+}
+table{
+  position: absolute;
+  top:175px;
+  left: 80px;
+  width: 200px;
+  border: 1px solid;
+  color: black;
+  border-spacing: 0PX;
+}
+thead td{
+  background-color: #00dcff;
+}
+tbody td{
+  background-color: white;
+}
+td{
+  border: 1px solid black;
+  text-align: center;
+}
+.description{
+  position: absolute;
+  top:280px;
+  left: 20px;
+}
+#description{
+  position: absolute;
+  height: 40px;
+  left: 120px;
+  top: -6px;
+  padding-left: 15px;
+}
+#description:focus{
+  border-bottom: 3px solid #00dcff;
+}
+.send{
+  position: absolute;
+  bottom: 20px;
+  left:20PX;
+  font-size: 15PX;
+  width: 100px;
+  height: 30px;
+  background-color: #00dcff;
+}
+.send:hover{
+  background-color: #068a9f;
+}
+.btn2{
+  position: absolute;
+  bottom: 20px;
+  left:220PX;
+  font-size: 15PX;
+  width: 100px;
+  height: 30px;
+  background-color: #00dcff;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: #068a9f;
+}
+
+footer{
+  grid-area: foot;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
