@@ -42,15 +42,18 @@
             <br><br>
 
 
-            
+<!--       removed !       pattern="(?=.*\d)(?=.*?[#?!@$%^&*-\]\[])(?=.*[A-Z]).{8,}"  -->
             <label for="password">Password:</label>
             <input type="password" name="pass" id="password" placeholder="Enter Password" 
-            pattern="(?=.*\d)(?=.*?[#?!@$%^&*-\]\[])(?=.*[A-Z]).{8,}" 
+           
             title="1.Password should be alphanumeric.
             2.First letter should be capital.
             3.Must contain a special character (@,$,&,!,etc)." 
             required>
-            <br><br>
+            <br>
+<!--             added -->
+            <div class="error"></div>
+            <br>
 
 
             <label for="confirm">Confirm Password:</label>
