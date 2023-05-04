@@ -4,6 +4,42 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+:root
+{
+  --mohamed:#686868;
+}
+::-webkit-scrollbar-thumb
+{
+  background-color: var(--mohamed);
+}
+::-webkit-scrollbar
+{
+  background-color: #eaeaea;
+}
+#lab span
+{
+  display: block;
+  background-color: white;
+  height: 1px;
+  width: 100%;
+}
+#lab
+{
+  border-radius: 6px;
+  background-color: var(--mohamed);
+  padding: 10px;
+  width: 50px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 76px;
+  left: 100px;
+  z-index: 1;
+  height: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .box {
   width: 100%;
   height: 100vh;
@@ -11,6 +47,8 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 .form-box {
   width: 90%;
@@ -138,6 +176,8 @@ nav a {
   bottom: -5%;
   width: 100%;
   background: black;
+  display: grid;
+  place-items: center;
 }
 
 #c3 {
@@ -147,4 +187,25 @@ nav a {
 
   color: white;
   background: black;
+}
+/* @media (min-width:767px)
+#lab
+{
+  display: none;
+} */
+@media (max-width:767px)
+{
+  .nav2{
+    display: none;
+  }
+  .c{
+    display: none;
+  }
+}
+@media (min-width:767px)
+{
+  #lab
+  {
+    display: none;
+  }
 }
