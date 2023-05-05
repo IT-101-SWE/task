@@ -15,6 +15,8 @@ h1{
 }
 
 
+
+
 form{
     text-align: center;
     width: 500px;
@@ -103,6 +105,3 @@ img{
 }
 
 
-#error{
-    color: red;
-}

@@ -5,7 +5,7 @@
             Sign up
         </title>
         <link rel="stylesheet" href="IT Project.css">
-        <!-- // logo of the website -->
+        <!-- logo of the website -->
         <link rel="icon" href="icon.png">
         
     </head>
@@ -14,11 +14,11 @@
         <script src="IT Project.js"></script>
         <ul>
         <li>
-            <!-- // logo of website -->
+            <!-- logo of website -->
             <img src="icon.png" alt="" width="80px">
         </li>
         <li>
-            <button id="backBtn" onclick="loginform.php">
+            <button id="backBtn" >
                 Back
             </button>
         </li>
@@ -26,13 +26,11 @@
         <h1>
             Freelancer Registration Form
         </h1>
-<!--         onsubmit added -->
-        <form action="registration.php" target="_blank" method="post" autocomplete="on" validate onsubmit="return validInput()" > 
+        <form action="registration.php" target="_blank" method="post" autocomplete="on"  onsubmit="return validInput()" validate > 
 
-            <label for="error"></label>
-            <br><br>
             
-
+            
+            <br>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter Name" required>
             <br><br>
@@ -43,36 +41,30 @@
             <br><br>
 
 
-<!--       removed !       pattern="(?=.*\d)(?=.*?[#?!@$%^&*-\]\[])(?=.*[A-Z]).{8,}"  -->
+            
             <label for="password">Password:</label>
             <input type="password" name="pass" id="password" placeholder="Enter Password" 
-           
             title="1.Password should be alphanumeric.
             2.First letter should be capital.
             3.Must contain a special character (@,$,&,!,etc)." 
             required>
             <br>
-<!--             added -->
+            <input type="checkbox" onclick="myFunction()">
+            <label>Show Password</label> 
+            <br><br>
+
+
             <div class="error"></div>
             <br>
 
 
             <label for="confirm">Confirm Password:</label>
             <input type="password" name="confirm" id="confirm" placeholder="Rewrite password" required>
+            <br>
+            <input type="checkbox" onclick="myFunction_confirm()">
+            <label>Show Password</label> 
             <br><br>
             
-
-
-            <span>
-                Gender:
-            </span>
-            <input type="radio" id="male" value="male" name="gender">
-            <label for="male">male</label>
-
-            <input type="radio" id="female" value="female" name="gender">
-            <label for="female">female</label>
-            <br><br>
-
 
             <label for="level">Choose Level:</label>
             <select name="level" id="level">
@@ -84,15 +76,29 @@
             <br><br>
 
 
+            <span>
+                Gender:
+            </span>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male">male</label>
+
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="female">female</label>
+            <br><br><br><br>
+
+
+            
+
+
             <input type="checkbox" id="agree" name="agree" required>
             <label for="agree">I agree for data sharing.</label>
             <br><br>
 
-            <!-- // go to login page if they already have an account -->
+            <!-- go to login page if they already have an account -->
             <a href="https://loginform.php" target="_self">Already have an account.</a>
             <br><br>
 
-            <!-- // check on passwords -->
+            <!-- check on passwords -->
             <input type="submit" onclick ="return PassValid()" value="Sign up">
 
         </form>

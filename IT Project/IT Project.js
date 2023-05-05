@@ -1,37 +1,13 @@
-// function PassValid()
-// {
-    
-//     var pass = document.getElementById("password").value;
-//     var confirm = document.getElementById("confirm").value;
-    
-//     if(pass !== confirm)
-//     {
-//         document.getElementById("error").innerHTML= "Passwords Do Not Match!"
-//         return false;
-//     }
-//     return true
-// }
 
-// window.onload = () =>
-// {
-//     const backBtn = document.getElementById("backBtn");
-//     backBtn.onclick = () =>
-//     {
-//         window.history.go(-1);
-//     }
-
-    
-// }
 
 window.onload = () =>
 {
-    
     const backBtn = document.getElementById("backBtn");
     backBtn.onclick = () =>
     {
         window.history.go(-1);
     }
-    
+
     let pass1 = document.getElementById("password");
     let err_box = document.getElementsByClassName("error")[0]; 
 
@@ -39,9 +15,30 @@ window.onload = () =>
     {
         err_box.style.opacity= 0;
     }
-
-
+    
 }
+
+
+
+function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+
+
+function myFunction_confirm() {
+    var x = document.getElementById("confirm");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
 
 function validInput(flag=0)
 {
@@ -88,7 +85,8 @@ function validInput(flag=0)
         flag = 2;
     }   
     
-    
+
+    //check number
     for(let num = 0; num <=9 ; num++)
     {
         if ((passwordChar.includes(num)))
@@ -100,7 +98,7 @@ function validInput(flag=0)
             flag=5;
         }
     }
-    
+
     //check which condition is false
     if(flag != 0)
     {
@@ -110,16 +108,16 @@ function validInput(flag=0)
                 err = "First Letter in password Must be capital !";
                 break;
             case 2:
-                err = "passwords Not matching !";
+                err = "Passwords Not matching !";
                 break;
             case 3:
-                err = "password lenght must be more than 8 characters !";
+                err = "Password lenght must be more than 8 characters !";
                 break;
             case 4:
-                err = "password Must include special characrter !";
+                err = "Password Must include special characrter !";
                 break;
             case 5:
-                err = "password Must include numbers !";
+                err = "Password Must include a number !";
                 break;
         }
 
