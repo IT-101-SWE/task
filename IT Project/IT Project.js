@@ -20,7 +20,7 @@ window.onload = () =>
 
 
 
-function myFunction() {
+function show_pass() {
     var x = document.getElementById("password");
     if (x.type === "password") {
       x.type = "text";
@@ -31,7 +31,7 @@ function myFunction() {
 
 
 
-function myFunction_confirm() {
+function show_confirm() {
     var x = document.getElementById("confirm");
     if (x.type === "password") {
       x.type = "text";
