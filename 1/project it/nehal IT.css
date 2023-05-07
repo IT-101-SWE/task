@@ -1,32 +1,63 @@
 body {
     margin: center;
+    background-color: aquamarine;
     
   }
-  h1{
-    color: cornflowerblue;
-    padding-left: 350px;
-  }
-     h2{
-      padding-left: 20px;
-      color: darkgrey;
-     }       
-  div{
-      padding-left:50px;
-      padding-top:50px;
-      padding-bottom:50px;
-      padding-right:50px;
-      height: 150px;
-      width: 150px;
-      background-color: aqua;
   
-      border-width: 5px;
-      border-color: azure;
-      border-style: solid;
+  div{
+      text-align: center;
+     position: absolute;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%,-50%);
+      padding: 40%;
+      border-bottom-right-radius:15px ;
+      border-top-left-radius: 15px;
+      background-color: darkslategray;
+      
+      
   }
   button{
-    background:blue;
-    padding:5px 5px 5px 5px
+    background-color: lightsteelblue;
+    padding:5px 5px 5px 5px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
   }
   button[type="submit"]{
-  color:white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  border-style: outset;
+  border-color: cadetblue;
+  margin-top: 15px;
+  padding: 8px;
+     border-radius: 2px;
+     background-color: cadetblue;
+     border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    
   }
+
+  input {
+      background-color: floralwhite;
+     color: aliceblue;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     margin-top: 15px;
+     padding: 8px;
+     border-radius: 2px;
+     outline: none;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+      
+  }
+  
+  label {
+   
+    color: silver;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  } 
